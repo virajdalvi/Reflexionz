@@ -14,16 +14,76 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="synx.css">
         <link href="https://fonts.googleapis.com/css?family=Exo+2|Poppins&display=swap" rel="stylesheet">
     </head>
     <body>
         <section>
-            <div class="container-fluid">
-                <img class="header" src="b.svg" alt="">
+            <div class="loader">
+                <center>
+                    <img id="loader" src="cric_loader.gif" alt="" />
+                </center>
             </div>
         </section>
+        <div class="main-content">
+            <section class="header">
+                <center>
+                     <img id="header-image" src="headercri.svg" alt="" />
+                </center>
+             </section>
+             <section class="about">
+                <table class="table table-resposive">
+                    <tr>
+                        <td style="width:50vw;border: 0px;">
+                            <div class="card-body card-1" >
+                                <p class="card-title">About</p>
+                               <p class="card-text">Sport includes all forms of competitive physical activity or games which,[1] through casual or organised participation, at least in part aim to use, maintain or improve physical ability and skills while providing enjoyment to participants, and in some cases, entertainment for spectators.[2] Hundreds of sports exist, from those between single contestants, through to those with hundreds of simultaneous participants, either in teams or competing as individuals. In certain sports such as racing, many contestants may compete.</p>
+                            </div>  
+                        </td>
+                        <td style="border:0px;">
+                            <img id="about-image-2" src="a.svg" alt="" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                         <td style="border:0px;">
+                             <img id="about-image-1" src="batsmencri.svg" alt="" />
+                         </td>
+                         <td style="width:50vw;border: 0px;">
+                            <div class="card-body card-2" >
+                               <p class="card-text">Sport includes all forms of competitive physical activity or games which,[1] through casual or organised participation, at least in part aim to use, maintain or improve physical ability and skills while providing enjoyment to participants, and in some cases, entertainment for spectators.[2] Hundreds of sports exist, from those between single contestants, through to those with hundreds of simultaneous participants, either in teams or competing as individuals. In certain sports such as racing, many contestants may compete.</p>
+                            </div> 
+                            </td>
+                    </tr>
+                </table>
+                
+             </section>
+             <section class="rules">
+     
+             </section>
+             <section class="timeing">
+     
+             </section>
+             <section class="footer">
+                 <table>
+                     <tr>
+                         <td class="side-1" style="width:33vw;"></td>
+                         <td><img id="footer-image" src="footercrciket.svg" alt="" /></td>
+                         <td class="side-2" style="width:33vw;"></td>
+                     </tr>
+                 </table>
+             </section>
+        </div>
+        <script>
+            $(".main-content").hide();;
+
+            window.addEventListener('load', function(){
+                $('.loader').delay(2600).fadeOut();
+                $('.main-content').delay(2600).fadeIn();
+                // 2600
+            });
+        </script>
     </body>
 </html>
-        
