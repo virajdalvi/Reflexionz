@@ -93,6 +93,9 @@ body{
     text-align: center;
     position: absolute;
 }
+.monster-logo{
+  width: 210px;
+}
 .reg_link{
   color: #303f9e;
   position: relative;
