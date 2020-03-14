@@ -58,7 +58,7 @@ body{
 }
 @media screen and (max-width:600px){
   #header{
-    height: 90vh;
+    height: 100vh;
   }
   .header-image{
     width: 100vw;
